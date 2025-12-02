@@ -6,12 +6,12 @@
 }
 
 body {
-  background-image: url("assets/back1.jpg");
+  background-image: url("resources/back1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  color: #f1f5f9;
+  color: #333;
 }
 
 
