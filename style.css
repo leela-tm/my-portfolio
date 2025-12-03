@@ -46,7 +46,7 @@ color: #333;
   background-size: (255, 255, 255, 0.9);
   padding:4px 12px;
   height:45px;
-  margin-bottom:45px;
+  margin-bottom:75px;
   display:inline-block;
 }
 
@@ -56,23 +56,41 @@ color: #333;
 
 #flip div div {
   background:#ff8aea;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
 }
+
 #flip div:first-child div {
   background:#ff89e3;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px
 }
 #flip div:last-child div {
   background:#f070d0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px
+}
+
+#flip .highlight {
+    font-size: 42px;
+    font-weight: 700;
 }
 
 @keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
+  0% {margin-top:0px;}
+  25% {margin-top:-90px;}
+  50% {margin-top:-180px;}
+  75% {margin-top:-90px;}
+  100% {margin-top:0px;}
 }
 
 nav {
