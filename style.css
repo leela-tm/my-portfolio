@@ -30,8 +30,8 @@ nav {
 }
 
 nav:hover {
-    color: rgba(173, 75, 157, 0.264);
-    animation: neon-pulse;
+    transform: translateY(-2px);
+    box-shadow: #0f172a;
 }
 
 nav h2 {
@@ -57,7 +57,7 @@ nav a:hover {
   color: #2563eb;
 }
 
-/* Hero Section */
+
 .hero {
   min-height: 90vh;
   display: flex;
@@ -166,9 +166,8 @@ textarea {
   font-size: 0.95rem;
 }
 
-wrapper1 {
+.wrapper {
     background-image: url(resources/back3.jpg);
-    background-blend-mode: overlay;
     margin-top: 0%;
     text-align: center;
     margin-top: 25%;
