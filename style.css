@@ -37,7 +37,7 @@ footer {
   backdrop-filter: blur;
   background: rgba(172, 113, 150, 0.371);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
@@ -67,7 +67,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #2563eb;
+  color: #c025eb;
+  transform: translateY(-6px);
 }
 
 
@@ -108,25 +109,6 @@ nav a:hover {
 }
 
 .hero button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(117, 53, 99, 0.3);
-}
-
-.submit button {
-  margin-top: 25px;
-  padding: 12px 28px;
-  border-radius: 30px;
-  border: none;
-  background-image: url(resources/back3.jpg);
-  background-size: (255, 255, 255, 0.9);
-  background-blend-mode: darken;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.2s ease;
-}
-
-.submit button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(117, 53, 99, 0.3);
 }
