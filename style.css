@@ -24,7 +24,7 @@ nav {
   backdrop-filter: blur;
   background: rgba(172, 113, 150, 0.371);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -87,15 +87,16 @@ nav a:hover {
   border: none;
   background-image: url(resources/back3.jpg);
   background-size: (255, 255, 255, 0.9);
-  color: white;
+  background-blend-mode: darken;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
 }
 
 .hero button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 20px rgba(117, 53, 99, 0.3);
 }
 
 
