@@ -29,6 +29,11 @@ nav {
   z-index: 100;
 }
 
+nav:hover {
+    color: rgba(173, 75, 157, 0.264);
+    animation: neon-pulse;
+}
+
 nav h2 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -92,7 +97,7 @@ nav a:hover {
   box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
-/* Sections */
+
 .section {
   padding: 80px 60px;
 }
@@ -104,7 +109,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Cards / Projects */
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -140,7 +145,7 @@ nav a:hover {
   color: #2563eb;
 }
 
-/* Contact Form */
+
 form {
   max-width: 450px;
   margin: auto;
@@ -159,6 +164,15 @@ textarea {
   border-radius: 10px;
   border: 1px solid #cbd5f5;
   font-size: 0.95rem;
+}
+
+wrapper1 {
+    background-image: url(resources/back3.jpg);
+    background-blend-mode: overlay;
+    margin-top: 0%;
+    text-align: center;
+    margin-top: 25%;
+    border-radius: 25%;
 }
 
 input:focus,
