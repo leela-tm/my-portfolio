@@ -36,12 +36,14 @@ color: #333;
 }
 
 #flip {
-  height:50px;
+  height:70px;
   overflow:hidden;
+  
 }
 
 #flip > div > div {
   color:#fff;
+  background-size: (255, 255, 255, 0.9);
   padding:4px 12px;
   height:45px;
   margin-bottom:45px;
