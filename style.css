@@ -29,19 +29,6 @@ nav {
   z-index: 100;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  backdrop-filter: blur;
-  background: rgba(172, 113, 150, 0.371);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
 nav:hover {
     transform: translateY(-2px);
     box-shadow: #0f172a;
@@ -67,8 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #c025eb;
-  transform: translateY(-6px);
+  color: #2563eb;
 }
 
 
@@ -216,16 +202,6 @@ form button:hover {
   opacity: 0.9;
 }
 
-.section {
-    background-image: url(resources/back3.jpg);
-    background-blend-mode: darken;
-    background-size: (255, 255, 255, 0.9);
-}
-
-.section:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
 
 footer {
   text-align: center;
