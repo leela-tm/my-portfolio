@@ -169,7 +169,7 @@ textarea {
 
 .wrapper {
     background-image: url(resources/back3.jpg);
-    background-size: (255, 255, 255, 0.9);
+    background-size: contain;
     margin-top: 0%;
     text-align: center;
     margin-top: 25%;
@@ -177,7 +177,7 @@ textarea {
 
 .wrapper:hover {
     transform: translateY(-6px);
-    box-shadow:rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 input:focus,
