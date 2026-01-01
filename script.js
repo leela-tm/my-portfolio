@@ -12,12 +12,33 @@ AOS.init({
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
+  const form = document.querySelector(".contact-form-wrapper form");
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Message sent!");
-    });
-  }
+  if (!form) return;
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("Network error. Please try again.");
+    }
+  });
 });
+
