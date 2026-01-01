@@ -5,72 +5,152 @@
   <title>Leelabari | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
+
 
   <nav>
     <h2 class="logo">Leelabari Tombari-Menegbo</h2>
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-    <div id=container>
-        Leelabari
-        <div id=flip>
-            <div><div>Student</div></div>
-            <div><div>Tech Enthusiast</div></div>
-            <div><div>Web Designer</div></div>
-        </div>
-        Tombari-Menegbo
-        <section class="hero">
-            <button onclick="scrollToContact()">Hire Me</button>
-        </section>
-    </div>
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-left" data-aos="fade-right">
+        <p class="hello">Hello,</p>
+        <h1>I'm Leelabari</h1>
+        <h3>Student • Tech Enthusiast • Web Designer</h3>
+        <button onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+          Hire Me
+        </button>
+      </div>
 
-  <section id="about" class="section">
-    <div class = "wrapper">
+      <div class="hero-right" data-aos="fade-left">
+        <img src="resources/womanicon.png" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about-section" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>
-      I am a passionate web developer skilled in HTML, CSS, and JavaScript.
-      I build clean, responsive, and modern websites.
+
+    <div class="about-container">
+      <div class="about-img">
+        <img src="resources/icon17.png">
+      </div>
+
+      <div class="about-text">
+        <p>
+          I’m a 4th year computer Science student at Pan-Atlantic University with practical industry experience from two summer internships at Descasio and MultiChoice, 
+          where I developed hands-on technical skills and a strong understanding of real-world systems
+        </p>
+
+        <a href="assets/Leelabari-CV.docx" download class="cv-btn">
+          Download My CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="skills-section" data-aos="fade-up">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-item">
+        <img src="resources/htmlicon.png">
+        <h4>HTML</h4>
+        <p class="percent">90%</p>
+      </div>
+
+      <div class="skill-item">
+        <img src="resources/cssicon.png">
+        <h4>CSS</h4>
+        <p class="percent">80%</p>
+      </div>
+
+      <div class="skill-item">
+        <img src="resources/jsicon.png">
+        <h4>JavaScript</h4>
+        <p class="percent">70%</p>
+      </div>
+
+      <div class="skill-item">
+        <img src="resources/uiuxicon.png">
+        <h4>UI/UX</h4>
+        <p class="percent">60%</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+  <div class="projects-card">
+    <div class="project-icon">
+      <img src="resources/icon9.png">
+    </div>
+    <h3>Schedule Management System</h3>
+    <p>Created a software to handle scheduling for employees of different departments in 
+      a single company using Java and Apache Netbeans
     </p>
+  </div>
+
+  <div class="projects-card">
+    <div class="project-icon">
+      <img src="resources/icon10.png">
     </div>
-  </section>
+    <h3>Cafeteria Management</h3>
+    <p>A software designed to automate all the processes if a university Cafeteria
+      from making payment, to uploading available foods and tracking inventory using Java and Apache Netbeans
+    </p>
+  </div>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>Short description of your project.</p>
-        <a href="#" target="_blank">View</a>
-      </div>
-
-      <div class="card">
-        <h3>University Cafeteria Application</h3>
-        <p> Created an application to automates</p>
-        <a href="#" target="_blank">View</a>
-      </div>
+  <div class="projects-card">
+    <div class="project-icon">
+      <img src="resources/icon9.png">
     </div>
-  </section>
+    <h3>Personal Library</h3>
+    <p>Created a personal library system to keep track of all the e-books I possess</p>
+  </div>
+</div>
 
-  <section id="contact" class="section">
+</section>
+
+
+  <section id="contact" class="contact-section" data-aos="fade-up">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <p>Have Any Project?</p>
+
+    <div class="contact-form-wrapper">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
+
 
   <footer>
-    <p>© 2025 Leelabari. All rights reserved.</p>
+    <p>Created by Leelabari © 2025 All Rights Reserved</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="script.js"></script>
     
 </body>
